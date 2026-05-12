@@ -1,5 +1,0 @@
-Updating the new file text
-
-In the quiet hum of the query engine, I sift through tangled tables to reveal the story beneath the noise.
-Each column whispers patterns, waiting for a JOIN to bring their meaning into view.
-And when the dashboard lights up in truth, the data sings clean, clear, and finally understood.
