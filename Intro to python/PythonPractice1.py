@@ -1,0 +1,7 @@
+print("Hello, world")
+print()
+print("Hello, World")
+print("HELLO, WORLD")
+print("My name is Sam", end=" ")
+print("Sam i am")
+print("My name is Sam", sep="*")
