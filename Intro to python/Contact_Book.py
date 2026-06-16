@@ -2,14 +2,12 @@ def add_contact(contacts):
     print("\n--- Add New Contact ---")
     name = input("Enter contact name: ").strip()
 
-    # Check duplicate
     if name in contacts:
         print("This name already exists. Contact not added.")
         return
 
     phone = input("Enter phone number: ").strip()
 
-    # Basic phone validation (digits only)
     if not phone.isdigit():
         print("Invalid phone number. Use digits only.")
         return
@@ -24,7 +22,6 @@ def view_contacts(contacts):
         print("The contact list is empty.")
         return
 
-    # Optional enhancement: alphabetical sorting
     for name in sorted(contacts):
         print(f"{name}: {contacts[name]}")
 
@@ -61,3 +58,29 @@ def main():
         print("\nContact Book Menu:")
         print("1. Add New Contact")
         print("2. View All Contacts")
+        print("3. Search Contact")
+        print("4. Delete Contact")
+        print("5. Exit")
+
+        try:
+            choice = int(input("Enter your choice (1-5): "))
+        except ValueError:
+            print("Invalid input. Please enter a number between 1 and 5.")
+            continue
+
+        if choice == 1:
+            add_contact(contacts)
+        elif choice == 2:
+            view_contacts(contacts)
+        elif choice == 3:
+            search_contact(contacts)
+        elif choice == 4:
+            delete_contact(contacts)
+        elif choice == 5:
+            print("Exiting Contact Book. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please enter a number between 1 and 5.")
+
+
+main()
