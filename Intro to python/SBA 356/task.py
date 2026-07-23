@@ -15,3 +15,4 @@ class Task:
         if self.due_date:
             return f"{status} {self.title} (due {self.due_date})"
         return f"{status} {self.title}"
+
