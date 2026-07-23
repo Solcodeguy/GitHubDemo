@@ -1,9 +1,7 @@
 from datetime import date
-import time
 
-timestamp = time.time()
-current_date = date.fromtimestamp(timestamp)
-print(current_date) 
+date_1 = date(1992, 1, 16)
+date_2 = date(1991, 2, 5)
 
-import calendar
-print(calendar.month(1993, 9))
+print(date_1 - date_2)
+
